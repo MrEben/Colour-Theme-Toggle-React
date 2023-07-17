@@ -1,0 +1,57 @@
+nav {
+  background: var(--clr-light-blue);
+  padding: 1.5rem 5rem;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container .logo h2 {
+  font-weight: 700;
+  display: flex;
+}
+.nav-container .logo .danger {
+  color: red;
+}
+.nav-container .app-links {
+  text-transform: capitalize;
+}
+.nav-container .app-links > div {
+  border: 2px solid var(--clr-dark-blue);
+  height: fit-content;
+  padding: 0.27rem;
+  font-weight: 600;
+  border-radius: 5rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background: var(--clr-white);
+  color: var(--clr-dark-blue);
+}
+
+.nav-container .app-links div:hover {
+  background: var(--clr-dark-blue);
+  color: var(--clr-white);
+}
+.nav-container .app-links h4 {
+  font-weight: 600;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+/* =====For Small screens====== */
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 1.2rem;
+  }
+  .nav-container .app-links > div {
+    padding: 0.6rem;
+    letter-spacing: normal;
+    border-radius: 2rem;
+    font-weight: 400;
+  }
+  .nav-container .app-links h4 > span {
+    display: none;
+  }
+}
